@@ -27,6 +27,11 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // swift3 点击空白收起键盘
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(false)
+    }
 
     @IBAction func genPW(_ sender: Any) {
         let str = str1.text! + str2.text!
@@ -34,6 +39,7 @@ class ViewController: UIViewController {
         if let l = Int(pw_len.text!){
             if l>0 {
                 pw.text = String(str.getMd5().prefix(l))
+                UIPasteboard.general.string = pw.text
             }
             else {
                 pw.text = "pw_len should >0"
