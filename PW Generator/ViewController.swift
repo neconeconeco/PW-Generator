@@ -32,7 +32,21 @@ class ViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(false)
     }
+    
+    // 点击清空
+    @IBAction func clearStr1(_ sender: Any) {
+        str1.text = ""
+    }
+    @IBAction func clearStr2(_ sender: Any) {
+        str2.text = ""
+    }
+    @IBAction func clearPwLen(_ sender: Any) {
+        pw_len.text = ""
+    }
+    
+    
 
+    // 生成密码
     @IBAction func genPW(_ sender: Any) {
         let str = str1.text! + str2.text!
         
