@@ -12,6 +12,7 @@
 		A79BCAB62137F09F009B05B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79BCAB42137F09F009B05B3 /* Main.storyboard */; };
 		A79BCAB82137F09F009B05B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A79BCAB72137F09F009B05B3 /* Assets.xcassets */; };
 		A79BCABB2137F09F009B05B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A79BCAB92137F09F009B05B3 /* LaunchScreen.storyboard */; };
+		A7E62009213830D4000F8C2F /* oc.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E62008213830D4000F8C2F /* oc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		A79BCAB72137F09F009B05B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A79BCABA2137F09F009B05B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A79BCABC2137F09F009B05B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7E62007213830D4000F8C2F /* PW Generator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PW Generator-Bridging-Header.h"; sourceTree = "<group>"; };
+		A7E62008213830D4000F8C2F /* oc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = oc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 				A79BCAB72137F09F009B05B3 /* Assets.xcassets */,
 				A79BCAB92137F09F009B05B3 /* LaunchScreen.storyboard */,
 				A79BCABC2137F09F009B05B3 /* Info.plist */,
+				A7E62008213830D4000F8C2F /* oc.m */,
+				A7E62007213830D4000F8C2F /* PW Generator-Bridging-Header.h */,
 			);
 			path = "PW Generator";
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 				TargetAttributes = {
 					A79BCAAC2137F09F009B05B3 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0940;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7E62009213830D4000F8C2F /* oc.m in Sources */,
 				A79BCAB32137F09F009B05B3 /* ViewController.swift in Sources */,
 				A79BCAB12137F09F009B05B3 /* AppDelegate.swift in Sources */,
 			);
@@ -274,12 +281,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2ZD568S42;
 				INFOPLIST_FILE = "PW Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "guozile.PW-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PW Generator/PW Generator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +299,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y2ZD568S42;
 				INFOPLIST_FILE = "PW Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "guozile.PW-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PW Generator/PW Generator-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
